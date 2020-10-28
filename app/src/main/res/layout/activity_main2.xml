@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@drawable/cesped">
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="333dp"
+        android:layout_height="185dp"
+        android:layout_centerHorizontal="true"
+        android:text="Elige la categoria"
+        android:textColor="#fff"
+        android:textSize="32sp"
+        android:textStyle="italic" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="182dp"
+        android:layout_height="52dp"
+        android:layout_below="@id/textView4"
+        android:layout_centerHorizontal="true"
+        android:text="Primera Division"
+
+        />
+
+    <RadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="184dp"
+        android:layout_height="64dp"
+        android:layout_below="@id/radioButton"
+        android:layout_centerHorizontal="true"
+        android:text="Segunda division" />
+</RelativeLayout>

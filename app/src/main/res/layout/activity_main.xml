@@ -88,4 +88,16 @@
         android:textColor="#fff"
         android:textSize="14sp" />
 
+    <Button
+        android:id="@+id/Acceder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerInParent="true"
+        android:text="Acceder sin registrarse"
+        android:textAllCaps="true"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
 </RelativeLayout>
