@@ -15,7 +15,7 @@
         android:layout_centerHorizontal="true"
         android:text="Elige la categoria"
         android:textColor="#fff"
-        android:textSize="32sp"
+        android:textSize="64sp"
         android:textStyle="italic" />
 
     <RadioButton
@@ -35,4 +35,12 @@
         android:layout_below="@id/radioButton"
         android:layout_centerHorizontal="true"
         android:text="Segunda division" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atras"
+        android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"
+        android:textAlignment="center" />
 </RelativeLayout>

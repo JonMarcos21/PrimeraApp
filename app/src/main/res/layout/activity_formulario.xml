@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cesped"
+    tools:context=".formulario">
+
+    <TextView
+        android:id="@+id/registro"
+        android:layout_width="305dp"
+        android:layout_height="117dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="serif"
+        android:text="Registro"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="32dp" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registro"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nombre"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Apellido"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/contraseña"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/apellido"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
+        android:textColorHint="#fff"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/sexo"
+        android:layout_width="228dp"
+        android:layout_height="41dp"
+        android:layout_below="@id/contraseña"
+        android:layout_centerHorizontal="true"
+        android:text="Sexo"
+        android:textColor="#fff"
+        android:textSize="20dp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexo"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center">
+
+
+        <RadioButton
+            android:id="@+id/Masculino"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/Femenino"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textColor="#fff"/>
+
+        <RadioButton
+            android:id="@+id/Otro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otro"
+            android:textColor="#fff"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/enviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textColor="@color/cardview_dark_background"
+        android:textStyle="bold"
+        android:textSize="12dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enviar y continuar"
+        android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

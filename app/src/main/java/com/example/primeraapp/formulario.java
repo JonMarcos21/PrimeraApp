@@ -7,27 +7,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity2 extends AppCompatActivity {
+public class formulario extends AppCompatActivity {
 
-    Button atras;
-
+    Button siguiente;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_formulario);
+        siguiente =(Button)findViewById(R.id.Acceder);
 
-        atras =(Button)findViewById(R.id.Acceder);
-
-        atras.setOnClickListener(new View.OnClickListener() {
+        siguiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent atras = new Intent(MainActivity2.this, MainActivity.class);
+                Intent siguiente = new Intent(formulario.this, MainActivity2.class);
 
-                startActivity(atras);
+                startActivity(siguiente);
+
             }
         });
-    }
-    }
 
-
+    }
+}

@@ -75,24 +75,29 @@
                 android:text="Login"
                 android:textColor="#fff"
                 android:textSize="24sp" />
+
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textView3"
+
+
+    <Button
+        android:id="@+id/registro"
         android:layout_width="175dp"
         android:layout_height="49dp"
         android:layout_below="@id/cardview"
         android:layout_centerInParent="true"
         android:text="Registrarse"
-        android:textColor="#fff"
-        android:textSize="14sp" />
+        android:textColor="@color/cardview_dark_background"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"/>
 
     <Button
         android:id="@+id/Acceder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/textView3"
+        android:layout_below="@id/registro"
         android:layout_centerInParent="true"
         android:text="Acceder sin registrarse"
         android:textAllCaps="true"
