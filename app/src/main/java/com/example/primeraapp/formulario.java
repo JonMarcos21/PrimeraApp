@@ -9,20 +9,20 @@ import android.widget.Button;
 
 public class formulario extends AppCompatActivity {
 
-    Button siguiente;
+    Button siguient;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_formulario);
-        siguiente =(Button)findViewById(R.id.Acceder);
+        siguient=(Button)findViewById(R.id.enviar);
 
-        siguiente.setOnClickListener(new View.OnClickListener() {
+        siguient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent siguiente = new Intent(formulario.this, MainActivity2.class);
+                Intent siguient= new Intent(formulario.this, MainActivity2.class);
 
-                startActivity(siguiente);
+                startActivity(siguient);
 
             }
         });

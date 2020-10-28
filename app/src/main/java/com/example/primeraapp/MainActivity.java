@@ -29,6 +29,20 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
+        Button formulario;
+
+        formulario =(Button)findViewById(R.id.registro);
+
+        formulario.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent formulario = new Intent(MainActivity.this,formulario.class);
+
+                startActivity(formulario);
+
+            }
+        });
     }
 }
 
