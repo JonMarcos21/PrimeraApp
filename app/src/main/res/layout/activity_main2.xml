@@ -20,7 +20,7 @@
         android:textStyle="italic" />
 
     <Button
-        android:id="@+id/Primer"
+        android:id="@+id/Primera"
         android:layout_width="268dp"
         android:layout_height="89dp"
         android:layout_below="@id/textView4"
@@ -34,7 +34,7 @@
         android:layout_width="268dp"
         android:layout_height="89dp"
         android:background="@color/cardview_light_background"
-        android:layout_below="@id/Primer"
+        android:layout_below="@id/Primera"
         android:layout_centerHorizontal="true"
         android:text="Segunda  Division" />
     <Button

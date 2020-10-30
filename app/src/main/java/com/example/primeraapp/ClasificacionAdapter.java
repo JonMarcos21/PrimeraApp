@@ -1,4 +1,4 @@
-package com.example.primeraapp.ui.primera;
+package com.example.primeraapp;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,16 +11,12 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.primeraapp.Primera;
-import com.example.primeraapp.R;
-import com.example.primeraapp.ui.Clasificacion;
-
 public class ClasificacionAdapter extends RecyclerView.Adapter<ClasificacionAdapter.ViewHolder> {
 
     Clasificacion[] tabla;
     Context context;
 
-    public ClasificacionAdapter(Clasificacion [] tabla ,  Primera activity) {
+    public ClasificacionAdapter(Clasificacion [] tabla ,  MainActivity3 activity) {
         this.tabla = tabla;
         this.context = activity;
     }
@@ -36,16 +32,17 @@ public class ClasificacionAdapter extends RecyclerView.Adapter<ClasificacionAdap
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        final Clasificacion tabla =this.tabla [position];
-        holder.textViewPosicion.setText(tabla.getPosicion());
-        holder.textViewNombre.setText(tabla.getNombre());
-        holder.textViewPuntos.setText(tabla.getPuntos());
-        holder.equipoImage.setImageResource(tabla.getEquipoImage());
+        final Clasificacion tablaList = tabla [position];
+        holder.equipoImage.setImageResource(tablaList.getEquipoImage());
+        holder.textViewPosicion.setText(tablaList.getPosicion());
+        holder.textViewNombre.setText(tablaList.getNombre());
+        holder.textViewPuntos.setText(tablaList.getPuntos());
+
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, tabla.getPosicion(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, tablaList.getPosicion(), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -65,12 +62,9 @@ public class ClasificacionAdapter extends RecyclerView.Adapter<ClasificacionAdap
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             equipoImage = itemView.findViewById(R.id.imageview);
+            textViewPosicion = itemView.findViewById(R.id.textPosicion);
             textViewNombre = itemView.findViewById(R.id.textNombre);
             textViewPuntos = itemView.findViewById(R.id.textPuntos);
-            textViewPosicion = itemView.findViewById(R.id.textPosicion);
-
-
-
 
         }
     }

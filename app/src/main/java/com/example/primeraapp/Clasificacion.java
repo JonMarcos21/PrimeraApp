@@ -1,10 +1,13 @@
-package com.example.primeraapp.ui;
+package com.example.primeraapp;
 
 public class Clasificacion {
-    private int posicion;
-    private int puntos;
     private Integer equipoImage;
+    private int posicion;
     private String nombre;
+
+    private int puntos;
+
+
 
     public Clasificacion( int posicion, int puntos, Integer equipoImage , String nombre) {
         this.posicion = posicion;
@@ -36,6 +39,7 @@ public class Clasificacion {
     public void setEquipoImage(Integer equipoImage) {
         this.equipoImage = equipoImage;
     }
+
     public String getNombre() {
         return nombre;
     }
