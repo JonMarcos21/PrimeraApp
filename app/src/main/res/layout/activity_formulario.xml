@@ -68,7 +68,8 @@
         android:layout_centerHorizontal="true"
         android:text="Sexo"
         android:textColor="#fff"
-        android:textSize="20dp" />
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -83,21 +84,27 @@
             android:layout_width="237dp"
             android:layout_height="wrap_content"
             android:text="Masculino"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/Femenino"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Femenino"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
         <RadioButton
             android:id="@+id/Otro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Otro"
-            android:textColor="#fff"/>
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
     </RadioGroup>
 
     <Button

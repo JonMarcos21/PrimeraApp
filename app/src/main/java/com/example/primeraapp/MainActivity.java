@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
                Intent siguiente = new Intent(MainActivity.this, MainActivity2.class);
 
                startActivity(siguiente);
+               finish();
 
            }
        });
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent formulario = new Intent(MainActivity.this,formulario.class);
 
                 startActivity(formulario);
+                finish();
 
             }
         });
