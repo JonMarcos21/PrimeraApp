@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/btnShare"
+        android:title="Valora la App"
+        android:icon="@drawable/ic_baseline_star_24"/>
+    <item
+        android:id="@+id/btnAjustes"
+        android:title="Ajustes" />
+    <item
+        android:id="@+id/btnValora"
+        android:title="Comparte la App"
+        android:icon="@drawable/ic_baseline_share"/>
+</menu>
