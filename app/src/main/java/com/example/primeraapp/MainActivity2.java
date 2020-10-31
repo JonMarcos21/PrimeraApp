@@ -11,7 +11,8 @@ import android.widget.Button;
 public class MainActivity2 extends AppCompatActivity {
 
     private Button uno;
-
+    private Button dos;
+    private Button atras;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,17 +20,34 @@ public class MainActivity2 extends AppCompatActivity {
 
         //Asignacion de Button
         uno =findViewById(R.id.Primera);
-
+        atras=findViewById(R.id.atras);
+        dos=findViewById(R.id.Segunda);
     }
 
     public void pasarClisificacion(View view){
 
-        Intent atras = new Intent(this, MainActivity3.class);
+        Intent primera = new Intent(this, MainActivity3.class);
+        startActivity(primera);
+        finish();
+
+    }
+    public void IrAtras(View view){
+
+        Intent atras = new Intent(this, MainActivity.class);
         startActivity(atras);
         finish();
 
     }
-}
+    public void PasarAsegunda(View view){
+
+        Intent dos = new Intent(this, MainActivity5.class);
+        startActivity(dos);
+        finish();
+
+    }
+    }
+
+
 
 
 

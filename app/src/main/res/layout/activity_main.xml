@@ -48,7 +48,8 @@
         android:ems="10"
         android:hint="Password"
 
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textStyle="bold" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardview"
