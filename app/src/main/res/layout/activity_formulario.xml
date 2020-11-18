@@ -23,7 +23,7 @@
         android:id="@+id/nombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/registro"
+        android:layout_below="@id/añadirfoto"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
@@ -33,14 +33,14 @@
         android:textSize="20dp"
         android:textStyle="bold" />
     <EditText
-        android:id="@+id/apellido"
+        android:id="@+id/correo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/nombre"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Apellido"
+        android:text="Correo"
         android:textAllCaps="false"
         android:textColor="#fff"
         android:textSize="20dp"
@@ -51,7 +51,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:layout_below="@id/apellido"
+        android:layout_below="@id/correo"
         android:textSize="20dp"
         android:textColor="#fff"
         android:textAllCaps="false"
@@ -108,16 +108,53 @@
             android:textStyle="bold" />
     </RadioGroup>
 
+
     <Button
         android:id="@+id/enviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="41dp"
+        android:text="Enviar y continuar"
         android:textAllCaps="true"
         android:textColor="@color/cardview_dark_background"
-        android:textStyle="bold"
         android:textSize="12dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registro"
         android:layout_centerHorizontal="true"
-        android:text="Enviar y continuar"
-        android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Añade un logo (opcional) "
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="204dp"
+        android:layout_height="85dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:onClick="llamar"
+        app:srcCompat="@drawable/ic_menu_camera" />
+
+    <Button
+        android:id="@+id/añadirfoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/foto"
+        android:layout_centerHorizontal="true"
+        android:onClick="llamar"
+        android:text="Añadir foto" />
 
 </RelativeLayout>
