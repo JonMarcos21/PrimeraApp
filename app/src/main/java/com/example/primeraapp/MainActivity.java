@@ -9,12 +9,29 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
 
-    //boton para acceder sin registrarse
+
     Button siguiente;
+
+    private EditText mcontraseña;
+    private EditText mcorreo;
+
+    private Button login;
+
+    private String email = "";
+    private String password = "";
+
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +40,32 @@ public class MainActivity extends AppCompatActivity {
 
        siguiente =(Button)findViewById(R.id.Acceder);
 
-       siguiente.setOnClickListener(new View.OnClickListener() {
+        mcontraseña = (EditText) findViewById(R.id.editTextTextPassword);
+        mcorreo = (EditText) findViewById(R.id.editTextTextPersonName);
+        login = (Button) findViewById(R.id.login);
+
+        mAuth=FirebaseAuth.getInstance();
+
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                email = mcorreo.getText().toString();
+                password = mcontraseña.getText().toString();
+
+                if(!email.isEmpty() && !password.isEmpty()){
+
+                    loginuser();
+                }
+                else{
+                    Toast.makeText(MainActivity.this, "Completa los campos", Toast.LENGTH_SHORT).show();
+                }
+
+            }
+        });
+
+        //boton para acceder sin registrarse
+    /*   siguiente.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
@@ -33,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
                finish();
 
            }
-       });
+       });*/
+
+
 
        //boton para aacceder al formulario
         Button formulario;
@@ -52,14 +96,32 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    //creacion metodo login
+    private void loginuser(){
 
+        mAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()){
+                    startActivity(new Intent(MainActivity.this, MainActivity2.class));
+
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "No se pudo iniciar sesion, compruebe los datos", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+    }
+
+
+    //Integracion del menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
 
-    //Integracion del menu
+
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
@@ -80,6 +142,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
+
 
 
 }

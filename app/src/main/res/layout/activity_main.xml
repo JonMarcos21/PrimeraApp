@@ -32,11 +32,11 @@
         android:layout_below="@id/Pelota"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
-
+        android:textColorHint="#fff"
         android:ems="10"
-        android:hint="Nombre de usuario"
+        android:hint="Correo electronico"
         android:inputType="textPersonName"
-        android:text="Nombre de usuario"
+
         android:textSize="16sp" />
 
     <EditText
@@ -47,7 +47,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="Password"
-
+        android:textColorHint="#fff"
         android:inputType="textPassword"
         android:textStyle="bold" />
 
