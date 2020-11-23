@@ -27,9 +27,9 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre"
+        android:hint="Nombre"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColorHint="#fff"
         android:textSize="20dp"
         android:textStyle="bold" />
     <EditText
@@ -40,9 +40,9 @@
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Correo"
+        android:hint="Correo"
+        android:textColorHint="#fff"
         android:textAllCaps="false"
-        android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold" />
 
@@ -57,7 +57,7 @@
         android:textAllCaps="false"
         android:textStyle="bold"
         android:inputType="textPassword"
-        android:hint="Contraseña"
+        android:hint="Contraseña(Minimo 6 caracteres)"
         android:textColorHint="#fff"
         android:layout_centerHorizontal="true"/>
 
@@ -73,6 +73,7 @@
         android:textStyle="bold" />
 
     <RadioGroup
+        android:id="@+id/rsexo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/sexo"

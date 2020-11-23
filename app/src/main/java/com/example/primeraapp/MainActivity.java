@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    //boton para acceder sin registrarse
     Button siguiente;
 
     @Override
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
            }
        });
 
+       //boton para aacceder al formulario
         Button formulario;
 
         formulario =(Button)findViewById(R.id.registro);
@@ -57,13 +59,14 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
+    //Integracion del menu
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()){
 
-            case R.id.btnAjustes:
-                Toast.makeText(getBaseContext(),"Ajustes",Toast.LENGTH_SHORT).show();
+            case R.id.info:
+                Toast.makeText(getBaseContext(),"informacion",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnShare:
                 Toast.makeText(getBaseContext(),"Comparte la App",Toast.LENGTH_SHORT).show();
@@ -77,5 +80,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
 

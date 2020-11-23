@@ -5,13 +5,15 @@
 
     <item
         android:id="@+id/btnShare"
-        android:title="Valora la App"
-        android:icon="@drawable/ic_baseline_star_24"/>
+        android:title="Comparte la App"
+        android:icon="@drawable/compartir"/>
     <item
-        android:id="@+id/btnAjustes"
-        android:title="Ajustes" />
+        android:id="@+id/info"
+        android:title="Informacion"
+        android:icon="@drawable/info"
+        />
     <item
         android:id="@+id/btnValora"
-        android:title="Comparte la App"
-        android:icon="@drawable/ic_baseline_share"/>
+        android:title="Valora la App"
+        android:icon="@drawable/estrella"/>
 </menu>

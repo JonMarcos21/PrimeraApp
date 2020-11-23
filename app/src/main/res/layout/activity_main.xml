@@ -51,34 +51,7 @@
         android:inputType="textPassword"
         android:textStyle="bold" />
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/editTextTextPassword"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="68dp"
-        android:visibility="visible"
-        app:cardBackgroundColor="@color/colorAccent"
-        app:cardCornerRadius="25dp"
-        tools:visibility="visible"
-        app:cardElevation="10dp">
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:text="Login"
-                android:textColor="#fff"
-                android:textSize="24sp" />
-
-        </RelativeLayout>
-    </androidx.cardview.widget.CardView>
 
 
 
@@ -86,7 +59,7 @@
         android:id="@+id/registro"
         android:layout_width="175dp"
         android:layout_height="49dp"
-        android:layout_below="@id/cardview"
+        android:layout_below="@id/login"
         android:layout_centerInParent="true"
         android:text="Registrarse"
         android:textColor="@color/cardview_dark_background"
@@ -105,5 +78,21 @@
         android:textColor="@color/cardview_dark_background"
         android:textSize="14sp"
         android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextTextPassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:visibility="visible"
+        android:background="@android:color/holo_blue_light"
+        tools:visibility="visible"
+        android:layout_centerInParent="true"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="24sp"/>
+
 
 </RelativeLayout>
