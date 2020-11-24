@@ -10,6 +10,7 @@ import android.widget.Button;
 public class MainActivity4 extends AppCompatActivity {
 
     private Button atras;
+    Button jornada8;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +18,17 @@ public class MainActivity4 extends AppCompatActivity {
         setContentView(R.layout.activity_main4);
 
         atras = findViewById(R.id.button);
+        jornada8 = (Button) findViewById(R.id.jornada8);
+
+        jornada8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent jornada8 = new Intent(MainActivity4.this, jornada8laliga.class);
+                startActivity(jornada8);
+                finish();
+
+            }
+        });
     }
 
         public void IrAtras(View view){

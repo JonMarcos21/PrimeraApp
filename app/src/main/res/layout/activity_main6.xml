@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/cesped"
-    tools:context=".MainActivity4"
+    tools:context=".MainActivity6"
     >
 
 
@@ -47,4 +47,14 @@
         android:layout_marginTop="13dp"
         android:onClick="IrAtras"
         android:text="atras" />
+
+    <Button
+        android:id="@+id/jornada10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="22dp"
+        android:text="Jornada10->" />
 </RelativeLayout>

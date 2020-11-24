@@ -31,9 +31,9 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="399dp"
-        app:srcCompat="@drawable/clasificacio2" />
+        android:layout_width="459dp"
+        android:layout_height="404dp"
+        app:srcCompat="@drawable/clasificaciondiez" />
 
     <Button
         android:id="@+id/resultados"
