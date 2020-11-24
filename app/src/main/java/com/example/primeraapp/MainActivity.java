@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //boton para acceder sin registrarse
-      siguiente.setOnClickListener(new View.OnClickListener() {
+     siguiente.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
@@ -116,11 +116,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-
-
-
-
-
+    
 
 
 }

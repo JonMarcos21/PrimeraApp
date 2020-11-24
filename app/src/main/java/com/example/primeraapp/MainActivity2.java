@@ -112,6 +112,10 @@ public class MainActivity2 extends AppCompatActivity {
                 Toast.makeText(getBaseContext(),"Comparte la App",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnValora:
+                Intent intent = new Intent(MainActivity2.this, rating.class);
+                startActivity(intent);
+                finish();
+                break;
 
 
         }
