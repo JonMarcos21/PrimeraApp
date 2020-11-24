@@ -6,20 +6,15 @@
     <item
         android:id="@+id/btnShare"
         android:title="Comparte la App"
-        android:icon="@drawable/compartir"/>
+      />
 
     <item
         android:id="@+id/btnValora"
-        android:title="Valora la App"
-        android:icon="@drawable/estrella"/>
+        android:title="Valora la App" />
     <item
         android:id="@+id/salir"
         android:title="Cerrar sesion"
         android:icon="@drawable/info"
         />
-    <item
-        android:id="@+id/info"
-        android:title="Informacion"
-        android:icon="@drawable/info"
-        />
+
 </menu>

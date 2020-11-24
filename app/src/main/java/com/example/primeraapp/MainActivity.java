@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -43,8 +45,9 @@ public class MainActivity extends AppCompatActivity {
         mcontraseña = (EditText) findViewById(R.id.editTextTextPassword);
         mcorreo = (EditText) findViewById(R.id.editTextTextPersonName);
         login = (Button) findViewById(R.id.login);
-
         mAuth=FirebaseAuth.getInstance();
+
+
 
 
         login.setOnClickListener(new View.OnClickListener() {
@@ -65,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //boton para acceder sin registrarse
-    /*   siguiente.setOnClickListener(new View.OnClickListener() {
+      siguiente.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
@@ -75,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
                finish();
 
            }
-       });*/
+       });
 
 
 
@@ -114,34 +117,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //Integracion del menu
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu,menu);
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-
-        switch (item.getItemId()){
-
-            case R.id.info:
-                Toast.makeText(getBaseContext(),"informacion",Toast.LENGTH_SHORT).show();
-                break;
-            case R.id.btnShare:
-                Toast.makeText(getBaseContext(),"Comparte la App",Toast.LENGTH_SHORT).show();
-                break;
-                case R.id.btnValora:
-                Toast.makeText(getBaseContext(),"Valora la App",Toast.LENGTH_SHORT).show();
-                break;
-
-        }
-
-
-        return super.onOptionsItemSelected(item);
-    }
 
 
 

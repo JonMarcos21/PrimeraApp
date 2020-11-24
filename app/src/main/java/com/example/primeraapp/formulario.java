@@ -48,8 +48,9 @@ public class formulario extends AppCompatActivity {
 
 
 
+
     FirebaseAuth mAuth;
-    DatabaseReference mDatabase;
+    private DatabaseReference mDatabase;
 
     Button siguient;
     Button btnfoto;
@@ -91,6 +92,7 @@ public class formulario extends AppCompatActivity {
         siguient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
 
                 name=mnombre.getText().toString();
                 password=mcontraseña.getText().toString();
@@ -156,7 +158,7 @@ public class formulario extends AppCompatActivity {
 
                     startActivity(new Intent(formulario.this , MainActivity.class));
                     finish();
-                 /*  Map<String, Object>map = new HashMap<>();
+                 Map<String, Object>map = new HashMap<>();
                     map.put("name",name);
                     map.put("password",password);
                     map.put("email",email);
@@ -175,7 +177,7 @@ public class formulario extends AppCompatActivity {
                             }
 
                         }
-                    });*/
+                    });
                 }
                 else{
                     Toast.makeText(formulario.this, "No se pudo registrar este usuario", Toast.LENGTH_SHORT).show();
