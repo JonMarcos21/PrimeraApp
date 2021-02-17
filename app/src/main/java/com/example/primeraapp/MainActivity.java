@@ -35,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
     private FirebaseAuth mAuth;
 
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
         mcorreo = (EditText) findViewById(R.id.editTextTextPersonName);
         login = (Button) findViewById(R.id.login);
         mAuth=FirebaseAuth.getInstance();
+
 
 
 
@@ -67,19 +70,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //boton para acceder sin registrarse
+        /*boton Has olvidado la contraseña
      siguiente.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
 
-               Intent siguiente = new Intent(MainActivity.this, MainActivity2.class);
+               Intent siguiente = new Intent(MainActivity.this, resetActivity.class);
 
                startActivity(siguiente);
                finish();
 
            }
        });
-
+*/
 
 
        //boton para aacceder al formulario

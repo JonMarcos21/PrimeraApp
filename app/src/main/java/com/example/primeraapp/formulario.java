@@ -48,7 +48,6 @@ public class formulario extends AppCompatActivity {
 
 
 
-
     FirebaseAuth mAuth;
     private DatabaseReference mDatabase;
 
@@ -56,6 +55,8 @@ public class formulario extends AppCompatActivity {
     Button btnfoto;
     ImageView foto;
     static final int REQUEST_IMAGE_CAPTURE =100;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,6 +73,9 @@ public class formulario extends AppCompatActivity {
         mnombre = (EditText) findViewById(R.id.nombre);
         mcontraseña = (EditText) findViewById(R.id.contraseña);
         mcorreo = (EditText) findViewById(R.id.correo);
+
+
+
 
 
 
@@ -132,6 +136,7 @@ public class formulario extends AppCompatActivity {
 
 
     }
+    //agregar foto
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);

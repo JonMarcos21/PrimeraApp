@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/registro"
-        android:layout_width="305dp"
-        android:layout_height="117dp"
+        android:layout_width="311dp"
+        android:layout_height="64dp"
         android:layout_centerHorizontal="true"
         android:fontFamily="serif"
         android:text="Registro"
@@ -72,42 +72,9 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <RadioGroup
-        android:id="@+id/rsexo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/sexo"
-        android:layout_centerHorizontal="true"
-        android:textAlignment="center">
 
 
-        <RadioButton
-            android:id="@+id/Masculino"
-            android:layout_width="237dp"
-            android:layout_height="wrap_content"
-            android:text="Masculino"
-            android:textColor="#fff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/Femenino"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Femenino"
-            android:textColor="#fff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-
-        <RadioButton
-            android:id="@+id/Otro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Otro"
-            android:textColor="#fff"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </RadioGroup>
 
 
     <Button
@@ -157,5 +124,42 @@
         android:layout_centerHorizontal="true"
         android:onClick="llamar"
         android:text="Añadir foto" />
+
+    <RadioGroup
+        android:id="@+id/rsexo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sexo"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center">
+
+
+        <RadioButton
+            android:id="@+id/Hombre"
+            android:layout_width="237dp"
+            android:layout_height="wrap_content"
+            android:text="Masculino"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Femenino"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/Otro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Otro"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </RadioGroup>
 
 </RelativeLayout>

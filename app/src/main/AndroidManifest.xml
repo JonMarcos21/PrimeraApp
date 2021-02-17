@@ -15,7 +15,8 @@
         android:roundIcon="@drawable/espana"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".jornada10segunda"></activity>
+        <activity android:name=".resetActivity"></activity>
+        <activity android:name=".jornada10segunda" />
         <activity android:name=".jornada8laliga" />
         <activity android:name=".rating" />
         <activity android:name=".MainActivity6" />

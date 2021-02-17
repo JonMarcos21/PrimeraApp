@@ -109,6 +109,7 @@ public class MainActivity2 extends AppCompatActivity {
                 finish();
                 break;
             case R.id.btnShare:
+                
                 Toast.makeText(getBaseContext(),"Comparte la App",Toast.LENGTH_SHORT).show();
                 break;
             case R.id.btnValora:
